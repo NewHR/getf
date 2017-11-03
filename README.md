@@ -67,6 +67,24 @@ const data4 = {
 
 ## Usage
 ```javascript
+getf('string path with delimeters', 'default value')(dataObject)
+```
+Selimeters: \s
+
+```javascript
+// or
+getf('string', 'keys', 'path')(dataObject, 'default value')
+// or
+getf `path.withArray[1].elements` (dataObject, 'default value');
+// or
+getf(objectAsPath)(dataObject)
+```
+
+
+
+
+## Examples
+```javascript
 const getf = require('./lib.js');
 
 //*
