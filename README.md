@@ -21,7 +21,7 @@ The getf function allow a developer to handle many of those cases without repeat
 ```javascript
 getf('string path with delimeters', 'default value')(dataObject)
 ```
-Selimeters: \s
+Delimeters: any symbol included in regex pattern "\s"
 
 ```javascript
 // or
