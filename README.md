@@ -32,7 +32,7 @@ getf `path.withArray[1].elements` (dataObject, 'default value');
 getf(objectAsPath)(dataObject)
 ```
 
-
+## Examples
 ```javascript
 const data1 = {
   user: {
@@ -81,7 +81,7 @@ const data4 = {
 }
 ```
 
-## Examples
+**How use getf**
 ```javascript
 const getf = require('./lib.js');
 
