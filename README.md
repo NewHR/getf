@@ -15,7 +15,23 @@ var fooInput = myForm.querySelector('input[name=foo]')
 var fooValue = fooInput ? fooInput.value : undefined
 ```
 
-The Optional Chaining Operator allows a developer to handle many of those cases without repeating themselves and/or assigning intermediate results in temporary variables:
+The getf function allow a developer to handle many of those cases without repeating themselves and/or assigning intermediate results in temporary variables.
+
+## Usage
+```javascript
+getf('string path with delimeters', 'default value')(dataObject)
+```
+Selimeters: \s
+
+```javascript
+// or
+getf('string', 'keys', 'path')(dataObject, 'default value')
+// or
+getf `path.withArray[1].elements` (dataObject, 'default value');
+// or
+getf(objectAsPath)(dataObject)
+```
+
 
 ```javascript
 const data1 = {
@@ -64,24 +80,6 @@ const data4 = {
   }
 }
 ```
-
-## Usage
-```javascript
-getf('string path with delimeters', 'default value')(dataObject)
-```
-Selimeters: \s
-
-```javascript
-// or
-getf('string', 'keys', 'path')(dataObject, 'default value')
-// or
-getf `path.withArray[1].elements` (dataObject, 'default value');
-// or
-getf(objectAsPath)(dataObject)
-```
-
-
-
 
 ## Examples
 ```javascript
