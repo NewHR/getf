@@ -5,12 +5,15 @@ const getf = require('./lib.js');
  */
 var testNumber = 0; const test = (val, res) => {
 	var ret,
-  		asrt = val === res;
+		asrt = val === res;
 	++testNumber;  
-  if (Array.isArray(val) && Array.isArray(res))
-  	asrt = val.toString() == res.toString();
-	console.assert(asrt, `Test ${testNumber}, expected: ${JSON.stringify(val)}, result: ${JSON.stringify(res)}`);
-  asrt && console.info(`Test ${testNumber} passed`);
+	if (Array.isArray(val) && Array.isArray(res)) asrt = val.toString() == res.toString();
+	console
+		.assert(asrt,
+			`Test ${testNumber}, expected: ${JSON.stringify(val)}, result: ${JSON.stringify(res)}`
+	   )
+	;
+  	asrt && console.info(`Test ${testNumber} passed`);
 };
 
 // Test data
